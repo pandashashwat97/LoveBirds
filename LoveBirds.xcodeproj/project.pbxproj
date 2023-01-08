@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		858F115C2962796300DD6B33 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F115B2962796300DD6B33 /* RegisterViewController.swift */; };
+		858F115E2962798600DD6B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F115D2962798600DD6B33 /* LoginViewController.swift */; };
+		85AADF612966693C00EF2AA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85AADF602966693C00EF2AA7 /* GoogleService-Info.plist */; };
+		85AADF6429667CE900EF2AA7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 85AADF6329667CE900EF2AA7 /* FirebaseAuth */; };
+		85AADF6629667CE900EF2AA7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 85AADF6529667CE900EF2AA7 /* FirebaseFirestore */; };
+		85AADF6C2967524F00EF2AA7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AADF6B2967524F00EF2AA7 /* ChatViewController.swift */; };
+		85C82FFD295F63D800055296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C82FFC295F63D800055296 /* AppDelegate.swift */; };
+		85C82FFF295F63D800055296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C82FFE295F63D800055296 /* SceneDelegate.swift */; };
+		85C83001295F63D800055296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C83000295F63D800055296 /* ViewController.swift */; };
+		85C83004295F63D800055296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C83002295F63D800055296 /* Main.storyboard */; };
+		85C83006295F63D900055296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C83005295F63D900055296 /* Assets.xcassets */; };
+		85C83009295F63D900055296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C83007295F63D900055296 /* LaunchScreen.storyboard */; };
+		85C83014295F63D900055296 /* LoveBirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C83013295F63D900055296 /* LoveBirdsTests.swift */; };
+		85C8301E295F63D900055296 /* LoveBirdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8301D295F63D900055296 /* LoveBirdsUITests.swift */; };
+		85C83020295F63D900055296 /* LoveBirdsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8301F295F63D900055296 /* LoveBirdsUITestsLaunchTests.swift */; };
+		85D71205296890A700C37D99 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D71204296890A700C37D99 /* Constants.swift */; };
+		85D712072968A5B400C37D99 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D712062968A5B300C37D99 /* Message.swift */; };
+		85D7120A29699D0400C37D99 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7120829699D0300C37D99 /* MessageCell.swift */; };
+		85D7120B29699D0400C37D99 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D7120929699D0300C37D99 /* MessageCell.xib */; };
+		CA173B349A56DA513ACBB88B /* Pods_LoveBirds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD8A16822834B8793D2DFDF /* Pods_LoveBirds.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C83010295F63D900055296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C82FF1295F63D700055296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C82FF8295F63D800055296;
+			remoteInfo = LoveBirds;
+		};
+		85C8301A295F63D900055296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C82FF1295F63D700055296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C82FF8295F63D800055296;
+			remoteInfo = LoveBirds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BD8A16822834B8793D2DFDF /* Pods_LoveBirds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveBirds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835576868F554032C1A5FF09 /* Pods-LoveBirds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveBirds.debug.xcconfig"; path = "Target Support Files/Pods-LoveBirds/Pods-LoveBirds.debug.xcconfig"; sourceTree = "<group>"; };
+		858F115B2962796300DD6B33 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		858F115D2962798600DD6B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		85AADF602966693C00EF2AA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85AADF6B2967524F00EF2AA7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		85C82FF9295F63D800055296 /* LoveBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C82FFC295F63D800055296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85C82FFE295F63D800055296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85C83000295F63D800055296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85C83003295F63D800055296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C83005295F63D900055296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C83008295F63D900055296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85C8300A295F63D900055296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8300F295F63D900055296 /* LoveBirdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveBirdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C83013295F63D900055296 /* LoveBirdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveBirdsTests.swift; sourceTree = "<group>"; };
+		85C83019295F63D900055296 /* LoveBirdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveBirdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8301D295F63D900055296 /* LoveBirdsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveBirdsUITests.swift; sourceTree = "<group>"; };
+		85C8301F295F63D900055296 /* LoveBirdsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveBirdsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85D71204296890A700C37D99 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85D712062968A5B300C37D99 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		85D7120829699D0300C37D99 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		85D7120929699D0300C37D99 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		929B020BB145EE9429DF6643 /* Pods-LoveBirds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveBirds.release.xcconfig"; path = "Target Support Files/Pods-LoveBirds/Pods-LoveBirds.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C82FF6295F63D800055296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85AADF6429667CE900EF2AA7 /* FirebaseAuth in Frameworks */,
+				85AADF6629667CE900EF2AA7 /* FirebaseFirestore in Frameworks */,
+				CA173B349A56DA513ACBB88B /* Pods_LoveBirds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8300C295F63D900055296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C83016295F63D900055296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C82FF0295F63D700055296 = {
+			isa = PBXGroup;
+			children = (
+				85C82FFB295F63D800055296 /* LoveBirds */,
+				85C83012295F63D900055296 /* LoveBirdsTests */,
+				85C8301C295F63D900055296 /* LoveBirdsUITests */,
+				85C82FFA295F63D800055296 /* Products */,
+				D699F732A65EFB1591629715 /* Pods */,
+				D0A8ECF080A3A3193AC0DC31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85C82FFA295F63D800055296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C82FF9295F63D800055296 /* LoveBirds.app */,
+				85C8300F295F63D900055296 /* LoveBirdsTests.xctest */,
+				85C83019295F63D900055296 /* LoveBirdsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C82FFB295F63D800055296 /* LoveBirds */ = {
+			isa = PBXGroup;
+			children = (
+				85C82FFC295F63D800055296 /* AppDelegate.swift */,
+				85C82FFE295F63D800055296 /* SceneDelegate.swift */,
+				85C83000295F63D800055296 /* ViewController.swift */,
+				85C83002295F63D800055296 /* Main.storyboard */,
+				85D7120829699D0300C37D99 /* MessageCell.swift */,
+				85D7120929699D0300C37D99 /* MessageCell.xib */,
+				85AADF6B2967524F00EF2AA7 /* ChatViewController.swift */,
+				858F115D2962798600DD6B33 /* LoginViewController.swift */,
+				85D712062968A5B300C37D99 /* Message.swift */,
+				858F115B2962796300DD6B33 /* RegisterViewController.swift */,
+				85C83005295F63D900055296 /* Assets.xcassets */,
+				85C83007295F63D900055296 /* LaunchScreen.storyboard */,
+				85C8300A295F63D900055296 /* Info.plist */,
+				85AADF602966693C00EF2AA7 /* GoogleService-Info.plist */,
+				85D71204296890A700C37D99 /* Constants.swift */,
+			);
+			path = LoveBirds;
+			sourceTree = "<group>";
+		};
+		85C83012295F63D900055296 /* LoveBirdsTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C83013295F63D900055296 /* LoveBirdsTests.swift */,
+			);
+			path = LoveBirdsTests;
+			sourceTree = "<group>";
+		};
+		85C8301C295F63D900055296 /* LoveBirdsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85C8301D295F63D900055296 /* LoveBirdsUITests.swift */,
+				85C8301F295F63D900055296 /* LoveBirdsUITestsLaunchTests.swift */,
+			);
+			path = LoveBirdsUITests;
+			sourceTree = "<group>";
+		};
+		D0A8ECF080A3A3193AC0DC31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8A16822834B8793D2DFDF /* Pods_LoveBirds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D699F732A65EFB1591629715 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				835576868F554032C1A5FF09 /* Pods-LoveBirds.debug.xcconfig */,
+				929B020BB145EE9429DF6643 /* Pods-LoveBirds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C82FF8295F63D800055296 /* LoveBirds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C83023295F63D900055296 /* Build configuration list for PBXNativeTarget "LoveBirds" */;
+			buildPhases = (
+				0197BD34B1461BAE392D81EF /* [CP] Check Pods Manifest.lock */,
+				85C82FF5295F63D800055296 /* Sources */,
+				85C82FF6295F63D800055296 /* Frameworks */,
+				85C82FF7295F63D800055296 /* Resources */,
+				095EE9EEF17E8CD5CD016E6A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoveBirds;
+			packageProductDependencies = (
+				85AADF6329667CE900EF2AA7 /* FirebaseAuth */,
+				85AADF6529667CE900EF2AA7 /* FirebaseFirestore */,
+			);
+			productName = LoveBirds;
+			productReference = 85C82FF9295F63D800055296 /* LoveBirds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C8300E295F63D900055296 /* LoveBirdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C83026295F63D900055296 /* Build configuration list for PBXNativeTarget "LoveBirdsTests" */;
+			buildPhases = (
+				85C8300B295F63D900055296 /* Sources */,
+				85C8300C295F63D900055296 /* Frameworks */,
+				85C8300D295F63D900055296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C83011295F63D900055296 /* PBXTargetDependency */,
+			);
+			name = LoveBirdsTests;
+			productName = LoveBirdsTests;
+			productReference = 85C8300F295F63D900055296 /* LoveBirdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85C83018295F63D900055296 /* LoveBirdsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C83029295F63D900055296 /* Build configuration list for PBXNativeTarget "LoveBirdsUITests" */;
+			buildPhases = (
+				85C83015295F63D900055296 /* Sources */,
+				85C83016295F63D900055296 /* Frameworks */,
+				85C83017295F63D900055296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C8301B295F63D900055296 /* PBXTargetDependency */,
+			);
+			name = LoveBirdsUITests;
+			productName = LoveBirdsUITests;
+			productReference = 85C83019295F63D900055296 /* LoveBirdsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C82FF1295F63D700055296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					85C82FF8295F63D800055296 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					85C8300E295F63D900055296 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 85C82FF8295F63D800055296;
+					};
+					85C83018295F63D900055296 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 85C82FF8295F63D800055296;
+					};
+				};
+			};
+			buildConfigurationList = 85C82FF4295F63D700055296 /* Build configuration list for PBXProject "LoveBirds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C82FF0295F63D700055296;
+			packageReferences = (
+				85AADF6229667CE900EF2AA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 85C82FFA295F63D800055296 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C82FF8295F63D800055296 /* LoveBirds */,
+				85C8300E295F63D900055296 /* LoveBirdsTests */,
+				85C83018295F63D900055296 /* LoveBirdsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C82FF7295F63D800055296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D7120B29699D0400C37D99 /* MessageCell.xib in Resources */,
+				85C83009295F63D900055296 /* LaunchScreen.storyboard in Resources */,
+				85AADF612966693C00EF2AA7 /* GoogleService-Info.plist in Resources */,
+				85C83006295F63D900055296 /* Assets.xcassets in Resources */,
+				85C83004295F63D800055296 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8300D295F63D900055296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C83017295F63D900055296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0197BD34B1461BAE392D81EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoveBirds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		095EE9EEF17E8CD5CD016E6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveBirds/Pods-LoveBirds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveBirds/Pods-LoveBirds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveBirds/Pods-LoveBirds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C82FF5295F63D800055296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C83001295F63D800055296 /* ViewController.swift in Sources */,
+				85C82FFD295F63D800055296 /* AppDelegate.swift in Sources */,
+				85C82FFF295F63D800055296 /* SceneDelegate.swift in Sources */,
+				858F115E2962798600DD6B33 /* LoginViewController.swift in Sources */,
+				85D71205296890A700C37D99 /* Constants.swift in Sources */,
+				85D712072968A5B400C37D99 /* Message.swift in Sources */,
+				85AADF6C2967524F00EF2AA7 /* ChatViewController.swift in Sources */,
+				858F115C2962796300DD6B33 /* RegisterViewController.swift in Sources */,
+				85D7120A29699D0400C37D99 /* MessageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8300B295F63D900055296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C83014295F63D900055296 /* LoveBirdsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C83015295F63D900055296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8301E295F63D900055296 /* LoveBirdsUITests.swift in Sources */,
+				85C83020295F63D900055296 /* LoveBirdsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C83011295F63D900055296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C82FF8295F63D800055296 /* LoveBirds */;
+			targetProxy = 85C83010295F63D900055296 /* PBXContainerItemProxy */;
+		};
+		85C8301B295F63D900055296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C82FF8295F63D800055296 /* LoveBirds */;
+			targetProxy = 85C8301A295F63D900055296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C83002295F63D800055296 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C83003295F63D800055296 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85C83007295F63D900055296 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C83008295F63D900055296 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C83021295F63D900055296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85C83022295F63D900055296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C83024295F63D900055296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 835576868F554032C1A5FF09 /* Pods-LoveBirds.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRY5Q2TLMN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoveBirds/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShashwatPanda.LoveBirds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85C83025295F63D900055296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929B020BB145EE9429DF6643 /* Pods-LoveBirds.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRY5Q2TLMN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoveBirds/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShashwatPanda.LoveBirds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85C83027295F63D900055296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRY5Q2TLMN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShashwatPanda.LoveBirdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveBirds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoveBirds";
+			};
+			name = Debug;
+		};
+		85C83028295F63D900055296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRY5Q2TLMN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShashwatPanda.LoveBirdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveBirds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoveBirds";
+			};
+			name = Release;
+		};
+		85C8302A295F63D900055296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRY5Q2TLMN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShashwatPanda.LoveBirdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoveBirds;
+			};
+			name = Debug;
+		};
+		85C8302B295F63D900055296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRY5Q2TLMN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShashwatPanda.LoveBirdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoveBirds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C82FF4295F63D700055296 /* Build configuration list for PBXProject "LoveBirds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C83021295F63D900055296 /* Debug */,
+				85C83022295F63D900055296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C83023295F63D900055296 /* Build configuration list for PBXNativeTarget "LoveBirds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C83024295F63D900055296 /* Debug */,
+				85C83025295F63D900055296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C83026295F63D900055296 /* Build configuration list for PBXNativeTarget "LoveBirdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C83027295F63D900055296 /* Debug */,
+				85C83028295F63D900055296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C83029295F63D900055296 /* Build configuration list for PBXNativeTarget "LoveBirdsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8302A295F63D900055296 /* Debug */,
+				85C8302B295F63D900055296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85AADF6229667CE900EF2AA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85AADF6329667CE900EF2AA7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AADF6229667CE900EF2AA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		85AADF6529667CE900EF2AA7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AADF6229667CE900EF2AA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 85C82FF1295F63D700055296 /* Project object */;
+}
