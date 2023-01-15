@@ -128,14 +128,9 @@
 			children = (
 				85C82FFC295F63D800055296 /* AppDelegate.swift */,
 				85C82FFE295F63D800055296 /* SceneDelegate.swift */,
-				85C83000295F63D800055296 /* ViewController.swift */,
-				85C83002295F63D800055296 /* Main.storyboard */,
-				85D7120829699D0300C37D99 /* MessageCell.swift */,
-				85D7120929699D0300C37D99 /* MessageCell.xib */,
-				85AADF6B2967524F00EF2AA7 /* ChatViewController.swift */,
-				858F115D2962798600DD6B33 /* LoginViewController.swift */,
-				85D712062968A5B300C37D99 /* Message.swift */,
-				858F115B2962796300DD6B33 /* RegisterViewController.swift */,
+				85F836CA29731BCE00B9F395 /* Controllers */,
+				85F836C929731B9B00B9F395 /* Views */,
+				85F836CB29731BF900B9F395 /* Models */,
 				85C83005295F63D900055296 /* Assets.xcassets */,
 				85C83007295F63D900055296 /* LaunchScreen.storyboard */,
 				85C8300A295F63D900055296 /* Info.plist */,
@@ -160,6 +155,35 @@
 				85C8301F295F63D900055296 /* LoveBirdsUITestsLaunchTests.swift */,
 			);
 			path = LoveBirdsUITests;
+			sourceTree = "<group>";
+		};
+		85F836C929731B9B00B9F395 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85C83002295F63D800055296 /* Main.storyboard */,
+				85D7120829699D0300C37D99 /* MessageCell.swift */,
+				85D7120929699D0300C37D99 /* MessageCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85F836CA29731BCE00B9F395 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85C83000295F63D800055296 /* ViewController.swift */,
+				85AADF6B2967524F00EF2AA7 /* ChatViewController.swift */,
+				858F115D2962798600DD6B33 /* LoginViewController.swift */,
+				858F115B2962796300DD6B33 /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		85F836CB29731BF900B9F395 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85D712062968A5B300C37D99 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D0A8ECF080A3A3193AC0DC31 /* Frameworks */ = {

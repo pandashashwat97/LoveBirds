@@ -11,7 +11,6 @@ import CLTypingLabel
 class ViewController: UIViewController {
    
     @IBOutlet weak var loveLabel: CLTypingLabel!
-    
     @IBOutlet weak var birdsLabel: CLTypingLabel!
     
     override func viewDidLoad() {

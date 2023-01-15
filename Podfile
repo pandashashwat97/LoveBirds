@@ -5,5 +5,6 @@ target 'LoveBirds' do
   # Pods for LoveBirds
 
   pod 'CLTypingLabel', '~> 0.4.0'
-
+  pod 'IQKeyboardManagerSwift'
+  
 end

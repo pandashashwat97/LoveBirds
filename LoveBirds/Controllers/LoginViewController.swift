@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
 
     
     @IBOutlet weak var userNameLabel: UITextField!
-    
     @IBOutlet weak var passwordLabel: UITextField!
     
     override func viewDidLoad() {
@@ -29,7 +28,7 @@ class LoginViewController: UIViewController {
                 if let e = error {
                     print(e.localizedDescription)
                 }else{
-                    self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
                 
                 
