@@ -8,28 +8,46 @@
 import UIKit
 import Firebase
 
+
 class ChatViewController: UIViewController {
-    
+    var receiverName = "NA"
+    var senderName = "NA"
+    var crud = CRUD()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
     
     let db = Firestore.firestore()
-    
     var messages: [Message] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //fetch Names from Core Data
+        receiverName = crud.fetchName(entitySelected: "RName", key: "receiverName")
+        senderName = crud.fetchName(entitySelected: "SName", key: "senderName")
+        print(receiverName)
+        print(senderName)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .plain, target: self, action: #selector(didTapButton))
+        
         tableView.dataSource = self
         title = "LoveBirds"
         navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-        
+
         loadMessages()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+       super.viewWillAppear(animated)
+        receiverName = crud.fetchName(entitySelected: "RName", key: "receiverName")
+        loadMessages()
+    }
     
+    @objc func didTapButton(){
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: K.scanSegue) as? ScanViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
     func loadMessages() {
         
         db.collection(K.FStore.collectionName)
@@ -45,13 +63,14 @@ class ChatViewController: UIViewController {
                     for doc in snapshotDocuments {
                         let data = doc.data()
                         if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                            let newMessage = Message(sender: messageSender, body: messageBody)
-                            self.messages.append(newMessage)
-                            
-                            DispatchQueue.main.async {
-                                   self.tableView.reloadData()
-                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                            if(self.receiverName == messageSender || self.senderName == messageSender){
+                                let newMessage = Message(sender: messageSender, body: messageBody)
+                                self.messages.append(newMessage)
+                                DispatchQueue.main.async {
+                                    self.tableView.reloadData()
+                                    let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                    self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                                }
                             }
                         }
                     }
@@ -82,6 +101,11 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
+        
+        //coreData deletes senderName
+        crud.deleteName(entitySelected: "SName")
+        
+        //logOut
         let firebaseAuth = Auth.auth()
     do {
       try firebaseAuth.signOut()
@@ -91,8 +115,6 @@ class ChatViewController: UIViewController {
     }
       
     }
-    
-
 }
 
 extension ChatViewController: UITableViewDataSource {
@@ -122,12 +144,7 @@ extension ChatViewController: UITableViewDataSource {
             cell.label.textAlignment = .left
             cell.label.textColor = UIColor(named: K.BrandColors.lightPurple)
         }
-        
-      
-      
         return cell
     }
-    
-    
 }
 

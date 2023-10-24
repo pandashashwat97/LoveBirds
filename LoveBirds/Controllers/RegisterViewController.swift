@@ -13,7 +13,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UITextField!
     
     @IBOutlet weak var passwordLabel: UITextField!
-    
+    var crud = CRUD()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,13 +21,20 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
-        if let email = userNameLabel.text, let password = passwordLabel.text {
-            Auth.auth().createUser(withEmail: email, password: password){
+        
+        //coreData saving sender name
+        crud.saveName(entitySelected: "SName", name: userNameLabel.text ?? "NA")
+        
+        //Registering with firebase
+        if let email = userNameLabel.text,
+           let password = passwordLabel.text {
+            Auth.auth().createUser(withEmail: email,
+                                   password: password){ [weak self]
                 firebaseResult, error in
                 if let e = error {
                     print(e.localizedDescription)
                 }else{
-                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                   self?.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
         }

@@ -21,9 +21,6 @@ class ViewController: UIViewController {
             self.birdsLabel.charInterval = 0.15
             self.birdsLabel.text = "BIRDS"
         }
-       
     }
-
-
 }
 

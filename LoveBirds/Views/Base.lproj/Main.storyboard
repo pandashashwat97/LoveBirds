@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vIn-xm-jbr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vIn-xm-jbr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -100,7 +100,7 @@
         <!--Login View Controller-->
         <scene sceneID="9jg-oH-RBO">
             <objects>
-                <viewController id="QXl-JL-g1X" customClass="LoginViewController" customModule="LoveBirds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="QXl-JL-g1X" customClass="LoginViewController" customModule="LoveBirds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cwY-jm-yBI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-B1-Qn2">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-B1-Qn2">
                                                 <rect key="frame" x="0.0" y="65" width="313" height="55"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" name="BrandPurple"/>
@@ -246,7 +246,7 @@
         <!--Chat View Controller-->
         <scene sceneID="uyf-mm-D6E">
             <objects>
-                <viewController id="eUl-qY-KDv" customClass="ChatViewController" customModule="LoveBirds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="eUl-qY-KDv" customClass="ChatViewController" customModule="LoveBirds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbh-e9-yRa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,11 +326,56 @@
                     <connections>
                         <outlet property="messageTextField" destination="moM-A2-kpZ" id="j4Q-WQ-fH5"/>
                         <outlet property="tableView" destination="be6-Jo-YFh" id="Dsv-vc-SW0"/>
+                        <segue destination="QGK-pR-OZ2" kind="show" identifier="ScanQR" id="1FP-pe-49r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftI-Z6-Rwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958.0152671755723" y="134.50704225352112"/>
+            <point key="canvasLocation" x="3011" y="-2"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="goM-Ju-M6m">
+            <objects>
+                <viewController storyboardIdentifier="ScanViewController" id="QGK-pR-OZ2" customClass="ScanViewController" customModule="LoveBirds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dop-sw-c9s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv7-NY-mC9">
+                                <rect key="frame" x="147" y="700" width="99.333333333333314" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="ScanQR">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startScanningPressed:" destination="QGK-pR-OZ2" eventType="touchUpInside" id="Kvk-3m-n1i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVl-uc-awR">
+                                <rect key="frame" x="102" y="637.66666666666663" width="189" height="32.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N3N-m9-RGL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dv7-NY-mC9" firstAttribute="top" secondItem="TVl-uc-awR" secondAttribute="bottom" constant="30" id="4YD-G8-FKD"/>
+                            <constraint firstItem="Dv7-NY-mC9" firstAttribute="centerX" secondItem="dop-sw-c9s" secondAttribute="centerX" id="Cf6-yi-z7o"/>
+                            <constraint firstItem="N3N-m9-RGL" firstAttribute="bottom" secondItem="Dv7-NY-mC9" secondAttribute="bottom" constant="80" id="RMu-HN-spu"/>
+                            <constraint firstItem="TVl-uc-awR" firstAttribute="centerX" secondItem="dop-sw-c9s" secondAttribute="centerX" id="lrr-ut-j86"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="atA-cM-QLa"/>
+                    <connections>
+                        <outlet property="receiverNameField" destination="TVl-uc-awR" id="Oot-SL-Cfh"/>
+                        <outlet property="scanButtonText" destination="Dv7-NY-mC9" id="sMx-lZ-jt4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAt-Xf-dy1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3975" y="7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xcD-CH-8su">
@@ -375,7 +420,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

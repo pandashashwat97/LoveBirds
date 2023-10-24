@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853E49242ADAA1130076A7C2 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E49232ADAA1130076A7C2 /* ScanViewController.swift */; };
+		8547B2372AE65BD700D02FE3 /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547B2362AE65BD700D02FE3 /* CRUD.swift */; };
 		858F115C2962796300DD6B33 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F115B2962796300DD6B33 /* RegisterViewController.swift */; };
 		858F115E2962798600DD6B33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F115D2962798600DD6B33 /* LoginViewController.swift */; };
 		85AADF612966693C00EF2AA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85AADF602966693C00EF2AA7 /* GoogleService-Info.plist */; };
@@ -26,6 +28,9 @@
 		85D712072968A5B400C37D99 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D712062968A5B300C37D99 /* Message.swift */; };
 		85D7120A29699D0400C37D99 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7120829699D0300C37D99 /* MessageCell.swift */; };
 		85D7120B29699D0400C37D99 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D7120929699D0300C37D99 /* MessageCell.xib */; };
+		85FE380C2ADBA68600296465 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85FE380A2ADBA68600296465 /* Data.xcdatamodeld */; };
+		85FE38502AE1153A00296465 /* RName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE384E2AE1153A00296465 /* RName.swift */; };
+		85FE38512AE1153A00296465 /* SName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE384F2AE1153A00296465 /* SName.swift */; };
 		CA173B349A56DA513ACBB88B /* Pods_LoveBirds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD8A16822834B8793D2DFDF /* Pods_LoveBirds.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,8 @@
 /* Begin PBXFileReference section */
 		3BD8A16822834B8793D2DFDF /* Pods_LoveBirds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveBirds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		835576868F554032C1A5FF09 /* Pods-LoveBirds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveBirds.debug.xcconfig"; path = "Target Support Files/Pods-LoveBirds/Pods-LoveBirds.debug.xcconfig"; sourceTree = "<group>"; };
+		853E49232ADAA1130076A7C2 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		8547B2362AE65BD700D02FE3 /* CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
 		858F115B2962796300DD6B33 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		858F115D2962798600DD6B33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		85AADF602966693C00EF2AA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -70,6 +77,9 @@
 		85D712062968A5B300C37D99 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		85D7120829699D0300C37D99 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		85D7120929699D0300C37D99 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		85FE380B2ADBA68600296465 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		85FE384E2AE1153A00296465 /* RName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RName.swift; sourceTree = "<group>"; };
+		85FE384F2AE1153A00296465 /* SName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SName.swift; sourceTree = "<group>"; };
 		929B020BB145EE9429DF6643 /* Pods-LoveBirds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveBirds.release.xcconfig"; path = "Target Support Files/Pods-LoveBirds/Pods-LoveBirds.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +114,7 @@
 		85C82FF0295F63D700055296 = {
 			isa = PBXGroup;
 			children = (
+				85FE38522AE1155B00296465 /* CoreData */,
 				85C82FFB295F63D800055296 /* LoveBirds */,
 				85C83012295F63D900055296 /* LoveBirdsTests */,
 				85C8301C295F63D900055296 /* LoveBirdsUITests */,
@@ -174,6 +185,7 @@
 				85AADF6B2967524F00EF2AA7 /* ChatViewController.swift */,
 				858F115D2962798600DD6B33 /* LoginViewController.swift */,
 				858F115B2962796300DD6B33 /* RegisterViewController.swift */,
+				853E49232ADAA1130076A7C2 /* ScanViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +196,17 @@
 				85D712062968A5B300C37D99 /* Message.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		85FE38522AE1155B00296465 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				85FE380A2ADBA68600296465 /* Data.xcdatamodeld */,
+				8547B2362AE65BD700D02FE3 /* CRUD.swift */,
+				85FE384F2AE1153A00296465 /* SName.swift */,
+				85FE384E2AE1153A00296465 /* RName.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		D0A8ECF080A3A3193AC0DC31 /* Frameworks */ = {
@@ -273,7 +296,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					85C82FF8295F63D800055296 = {
 						CreatedOnToolsVersion = 14.1;
@@ -393,9 +416,14 @@
 				858F115E2962798600DD6B33 /* LoginViewController.swift in Sources */,
 				85D71205296890A700C37D99 /* Constants.swift in Sources */,
 				85D712072968A5B400C37D99 /* Message.swift in Sources */,
+				85FE380C2ADBA68600296465 /* Data.xcdatamodeld in Sources */,
 				85AADF6C2967524F00EF2AA7 /* ChatViewController.swift in Sources */,
+				853E49242ADAA1130076A7C2 /* ScanViewController.swift in Sources */,
+				8547B2372AE65BD700D02FE3 /* CRUD.swift in Sources */,
 				858F115C2962796300DD6B33 /* RegisterViewController.swift in Sources */,
+				85FE38512AE1153A00296465 /* SName.swift in Sources */,
 				85D7120A29699D0400C37D99 /* MessageCell.swift in Sources */,
+				85FE38502AE1153A00296465 /* RName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +515,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -501,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -547,6 +576,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -555,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -576,12 +606,14 @@
 				DEVELOPMENT_TEAM = GRY5Q2TLMN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoveBirds/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan QR Code";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,12 +638,14 @@
 				DEVELOPMENT_TEAM = GRY5Q2TLMN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoveBirds/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan QR Code";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,7 +782,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.16.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -765,6 +799,19 @@
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		85FE380A2ADBA68600296465 /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85FE380B2ADBA68600296465 /* Data.xcdatamodel */,
+			);
+			currentVersion = 85FE380B2ADBA68600296465 /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 85C82FF1295F63D700055296 /* Project object */;
 }
